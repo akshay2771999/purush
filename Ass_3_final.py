@@ -120,9 +120,9 @@ for img in os.scandir(dir):
     if ret>0.99: #minimum similarity metric value after which we can say image is not ok
         print('Image is not OK')
     else:
-        print('image is Ok') #if ret<0.13 then image will be considered as Ok
+        print('image is Ok') #if ret<0.99 then image will be considered as Ok
 
-    if count >= 4: #inputting no of images succeding to initial count value that we are planning to scan
+    if count >= 4: #Taking input a no of images succeding to initial count value that we are planning to scan
         break
     
     
